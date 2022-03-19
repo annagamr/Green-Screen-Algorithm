@@ -1,0 +1,91 @@
+body {
+  margin: 30px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+html {
+  background-color: rgb(231, 213, 248);
+}
+
+h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-right: 20px;
+  animation: flicker 1.5s infinite alternate;
+  color: #fff;
+
+}
+
+@keyframes flicker {
+
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+    text-shadow:
+      0 0 4px rgb(209, 71, 198),
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px rgb(197, 111, 247),
+      0 0 80px rgb(197, 111, 247),
+      0 0 90px rgb(197, 111, 247),
+      0 0 100px rgb(197, 111, 247),
+      0 0 150px rgb(197, 111, 247);
+
+  }
+
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+canvas {
+
+  height: 400px;
+
+}
+
+
+input {
+  font-size: 12pt;
+}
+
+#fgcan {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+#bgcan {
+  display: none;
+  position: absolute;
+  left: 50%;
+}
+
+#final {
+
+  display: none;
+  position: absolute;
+  left: 25%;
+  top: 80%;
+
+}
+
+#wrapper {
+  text-align: center;
+  padding: 10px;
+}
+
+p, input {
+  font-size: 17px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#wrapper2 {
+  position: relative;
+}
+
+#buttonsWrap {
+  text-align: center;
+  margin-right: 80px;
+
+}
